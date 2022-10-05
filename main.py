@@ -5,6 +5,7 @@ def main():
     flag = True
     op = int(input('Por favor ingrese una eleccion: '))
     registro = []
+    s = None
     while flag:
         if op == 1:
             n = int(input('Ingrese una cantidad de registros a procesar: '))
@@ -15,11 +16,13 @@ def main():
             zona(k, registro)
             op = int(input('Por favor ingrese una eleccion: '))
         elif op == 3:
-            pass
+            matriz(registro)
+            op = int(input('Por favor ingrese una eleccion: '))
         elif op == 4:
-            pass
+            s = generate(registro)
+            op = int(input('Por favor ingrese una eleccion: '))
         elif op == 5:
-            pass
+            show(s)
         elif op == 6:
             print('Adios!!')
             flag = False
